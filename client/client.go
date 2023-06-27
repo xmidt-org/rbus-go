@@ -28,5 +28,7 @@ func (c *Client) Disconnect() error {
 }
 
 func (c *Client) Send(s string) error {
+	c.m.Lock()
+	defer c.m.Unlock()
 	return nil
 }
