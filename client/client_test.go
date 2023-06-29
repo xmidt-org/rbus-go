@@ -13,11 +13,16 @@ func TestNewClient(t *testing.T) {
 	tests := []struct {
 		description string
 		url         string
+		want        Client
 	}{
 		// Success case
 		{
 			description: "Valid args",
-			url:         "some url",
+			url:         "unix://file",
+			want: Client{
+				network: "unix",
+				address: "/file",
+			},
 		},
 	}
 
@@ -31,7 +36,7 @@ func TestNewClient(t *testing.T) {
 			})
 
 			require.NotNil(got)
-			assert.Equal(tc.url, got.url)
+			assert.Equal(&tc.want, got)
 		})
 	}
 }

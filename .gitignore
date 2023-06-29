@@ -4,6 +4,8 @@
 *.dll
 *.so
 *.dylib
+rbus-go
+cmd/cmd
 
 # vim
 *.swp
