@@ -88,7 +88,7 @@ func (c *Client) Send(m *rbus.Message) error {
 	}
 
 	if n < len(buf) {
-		return errors.New("not all bytes were sent.")
+		return errors.New("not all bytes were sent")
 	}
 
 	return nil
