@@ -138,7 +138,7 @@ func Decode(buf []byte) (m *Message, err error) {
 	}
 
 	if len(header) == 5*4 {
-		for i := 0; i < 5; i++ {
+		for i := range 5 {
 			t := binary.BigEndian.Uint32(header)
 			header = header[4:]
 			m.Times[i] = t
