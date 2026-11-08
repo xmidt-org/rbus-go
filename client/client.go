@@ -3,6 +3,7 @@
 package client
 
 import (
+	"context"
 	"errors"
 	"net"
 	"strings"
@@ -51,7 +52,7 @@ func (c *Client) Connect() error {
 		return nil
 	}
 
-	con, err := net.Dial(c.network, c.address)
+	con, err := (&net.Dialer{}).DialContext(context.Background(), c.network, c.address)
 	if err != nil {
 		return err
 	}
