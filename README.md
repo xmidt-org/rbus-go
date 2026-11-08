@@ -4,9 +4,8 @@ A go implementation of rbus client (and maybe the server too).
 
 [![Build Status](https://github.com/xmidt-org/rbus-go/actions/workflows/ci.yml/badge.svg)](https://github.com/xmidt-org/rbus-go/actions/workflows/ci.yml)
 [![codecov.io](http://codecov.io/github/xmidt-org/rbus-go/coverage.svg?branch=main)](http://codecov.io/github/xmidt-org/rbus-go?branch=main)
-[![Go Report Card](https://goreportcard.com/badge/github.com/xmidt-org/rbus-go)](https://goreportcard.com/report/github.com/xmidt-org/rbus-go)
 [![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/xmidt-org/rbus-go/blob/main/LICENSE)
-[![GitHub Release](https://img.shields.io/github/release/xmidt-org/rbus-go.svg)](CHANGELOG.md)
+[![GitHub Release](https://img.shields.io/github/release/xmidt-org/rbus-go.svg)](https://github.com/xmidt-org/rbus-go/releases)
 [![GoDoc](https://pkg.go.dev/badge/github.com/xmidt-org/rbus-go)](https://pkg.go.dev/github.com/xmidt-org/rbus-go)
 
 ## Table of Contents
@@ -23,7 +22,7 @@ By participating, you agree to this Code.
 ## Examples 
 
 To use the rbus-go library, it first should be added as an import in the file you plan to use it.
-Examples can be found at the top of the [GoDoc](https://godoc.org/github.com/xmidt-org/rbus-go).
+Examples can be found at the top of the [GoDoc](https://pkg.go.dev/github.com/xmidt-org/rbus-go).
 
 ## Contributing
 
